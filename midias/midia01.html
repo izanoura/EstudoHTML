@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/brisa.png" type="image/x-icon">
     <title>Midias HTML</title>
 </head>
+
 <body>
-    <!--add imagem-->
-    <img src="img/paisagem.jpg" alt="paisagem">
+    <!--add imagem flexiveis-->
+    <picture>
+        <source media="(max-width: 500px)" srcset="img/300x395.jpg" type="image/jpg">
+        <source media="(max-width: 800px)" srcset="img/1000x1315.jpg" type="image/jpg">
+
+        <img src="img/paisagem.jpg" alt="paisagem">
+    </picture>
 </body>
+
 </html>
